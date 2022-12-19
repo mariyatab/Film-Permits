@@ -1,12 +1,14 @@
 ---
 title: "New York City Film Permits Analysis"
-date: "`r Sys.Date()`"
 author: "Mariya Tabachnikova"
-output: 
+date: "`r Sys.Date()`"
+output:
   html_document:
-    toc: true
-    toc_float: true
-    toc_collapsed: true
+    toc: yes
+    toc_float: yes
+    toc_collapsed: yes
+  pdf_document:
+    toc: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +17,7 @@ knitr::opts_chunk$set(echo = TRUE, include = TRUE, eval = TRUE, message = FALSE,
 
 # Introduction
 
-New York City has been the background for countless films and shows. The landmarks can be easily identified by most people and have become iconic symbols. Every year, thousands of permits are filed for permission to film at various locations across NYC all throughout the year. This report will explore any commonalities between filming frequency and time of year, borough, and more. 
+New York City has been the background for countless films and shows. The landmarks can be easily identified by most people and have become iconic symbols. Every year, thousands of permits are filed for permission to film at various locations across NYC all throughout the year. This report will explore any commonalities between filming frequency and time of year, borough, and more, in hopes of finding any trends and/or patterns. 
 
 ## R packages
 
