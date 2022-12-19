@@ -155,11 +155,9 @@ Now let's see if the most popular ZIP codes are all in Manhattan, too.
 nyc_map <- st_read("~/Documents/archive/nyc-zip-code-tabulation-areas-polygons.geojson", quiet = TRUE)
 # read in a map of NYC seperated by ZIP code lines
 
-nyc_map <- st_transform(nyc_map, crs = 4326)
-
-ggplot(nyc_map) + geom_sf() + theme_inset()
-# transform the map with spatial referencing,
-# so points can be plotted accordingly 
+nyc_map <- st_transform(nyc_map, crs = 4326) # transform the map with spatial 
+                                             # referencing, so points can be
+                                             # plotted accordingly 
 ```
 
 ```{r}
